@@ -1,0 +1,54 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Jupyter notebooks
+.ipynb_checkpoints/
+
+# Virtual environments
+.env/
+.venv/
+env/
+venv/
+
+# VSCode or PyCharm project settings
+.vscode/
+.idea/
+
+# Model checkpoints and logs
+models/
+checkpoints/
+outputs/
+*.ckpt
+*.h5
+*.pth
+*.pt
+
+# TensorBoard or training logs
+logs/
+*.log
+events.out.tfevents.*
+
+# Hugging Face Hub cache
+~/.cache/huggingface/
+
+# Dataset cache
+~/.cache/datasets/
+dataset/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Environment and secrets
+*.env
+.env.*
+
+# Misc
+*.bak
+*.swp
