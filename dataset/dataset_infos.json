@@ -1,0 +1,78 @@
+{
+  "enja-ner": {
+    "description": "NER dataset combining English and Japanese WikiANN data for NER fine-tuning.",
+    "citation": "",
+    "homepage": "",
+    "license": "cc-by-sa-3.0",
+    "features": {
+      "tokens": {
+        "_type": "Sequence",
+        "feature": {
+          "dtype": "string",
+          "_type": "Value"
+        }
+      },
+      "ner_tags": {
+        "_type": "Sequence",
+        "feature": {
+          "_type": "ClassLabel",
+          "num_classes": 7,
+          "names": [
+            "O",
+            "B-PER",
+            "I-PER",
+            "B-ORG",
+            "I-ORG",
+            "B-LOC",
+            "I-LOC"
+          ]
+        }
+      },
+      "langs": {
+        "_type": "Sequence",
+        "feature": {
+          "dtype": "string",
+          "_type": "Value"
+        }
+      },
+      "spans": {
+        "_type": "Sequence",
+        "feature": {
+          "dtype": "string",
+          "_type": "Value"
+        }
+      }
+    },
+    "splits": {
+      "train": {
+        "name": "train",
+        "num_bytes": 15176695,
+        "num_examples": 40000,
+        "dataset_name": "enja-ner"
+      },
+      "validation": {
+        "name": "validation",
+        "num_bytes": 7593954,
+        "num_examples": 20000,
+        "dataset_name": "enja-ner"
+      },
+      "test": {
+        "name": "test",
+        "num_bytes": 7676762,
+        "num_examples": 20000,
+        "dataset_name": "enja-ner"
+      }
+    },
+    "download_size": 30447411,
+    "dataset_size": 32115393,
+    "task_templates": [
+      {
+        "task": "token-classification",
+        "column_mapping": {
+          "tokens": "tokens",
+          "ner_tags": "ner_tags"
+        }
+      }
+    ]
+  }
+}
