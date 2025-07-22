@@ -5,4 +5,5 @@ Bash to run (if using cloud service):
 - cd enja-ner_xlm-RoBERTa
 - pip install -r requirements.txt
 - huggingface-cli login (to save to huggingface)
+- wandb login (if you want to save logs to weights and biases)
 - python scripts/xlm_RoBERTa_NER.py
