@@ -99,7 +99,7 @@ def compute_metrics(p):
     }
 
 # Training arguments
-with open("config/training_args.yaml") as f:
+with open("../config/training_args.yaml") as f:
     args_dict = yaml.safe_load(f)
 training_args = TrainingArguments(**args_dict)
 
