@@ -6,3 +6,4 @@ torch
 numpy
 pathlib
 accelerate>=0.26.0
+wandb
