@@ -4,3 +4,4 @@ evaluate
 seqeval
 torch
 numpy
+pathlib

@@ -10,6 +10,7 @@ pip install datasets transformers seqeval
 from datasets import load_dataset
 from transformers import AutoTokenizer, AutoModelForTokenClassification, TrainingArguments, Trainer
 from transformers import DataCollatorForTokenClassification
+from pathlib import Path
 import numpy as np
 import evaluate
 import yaml
@@ -99,7 +100,8 @@ def compute_metrics(p):
     }
 
 # Training arguments
-with open("../config/training_args.yaml") as f:
+config_path = Path(__file__).resolve().parent.parent / "config" / "training_args.yaml"
+with open(config_path) as f:
     args_dict = yaml.safe_load(f)
 training_args = TrainingArguments(**args_dict)
 
